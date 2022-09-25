@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Layout Classes</title>
+  <link rel="stylesheet" href="reset.css">
+  <style>
+    /* stylelint-disable block-no-empty */
+    body {
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      max-width: 992px;
+      margin: auto;
+
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .column {
+      flex-basis:calc(100% / 3);
+      padding-left: 8px;
+      padding-right: 8px;
+
+    }
+
+    img{
+      width: 100%;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Complete the HTML here -->
+  <div class="container">
+    <h1> Quentin Tarantino Movies</h1>
+    <div class="row">
+
+      <div class="column">
+
+        <img src="https://www.miramax.com/assets/Pulp-Fiction1.png" alt="Pulp Fiction Poster">
+        <h3> Pulp Fiction</h3>
+        <p>The lives of two mob hitmen, a boxer, a gangster and his wife,
+           and a pair of diner bandits intertwine in four tales of
+        violence and redemption.</p>
+      </div>
+
+      <div class="column">
+
+        <img src="https://m.media-amazon.com/images/M/MV5BMjIyNTQ5NjQ1OV5BMl5BanBnXkFtZTcwODg1MDU4OA@@._V1_.jpg" alt="Django Unchained">
+        <h3>Django Unchained</h3>
+        <p>With the help of a German bounty-hunter,
+          a freed slave sets out to rescue his wife from a brutal
+          plantation-owner in
+        Mississippi.</p>
+      </div>
+
+      <div class="column">
+        <img src="https://flxt.tmsimg.com/assets/p193875_p_v8_af.jpg" alt="Inglorious Basterds">
+        <h3>Inglorious Basterds</h3>
+        <p>In Nazi-occupied France during World War II,
+          a plan to assassinate Nazi leaders by a group of Jewish U.S. soldiers
+        coincides with a theatre owner's vengeful plans for the same.</p>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>
